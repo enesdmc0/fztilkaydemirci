@@ -2,13 +2,13 @@
 
 import React, { useEffect, useState } from "react";
 import {InfiniteMovingCards} from "@/components/ui/infinite";
-import {TypewriterEffectSmoothDemo} from "@/app/test7";
+import {TextGenerateEffect} from "@/components/ui/typewriter";
 
 
 export function InfiniteMovingCardsDemo() {
     return (
-        <div className=" rounded-md flex border border-red-900 flex-col antialiased items-center justify-center relative overflow-hidden">
-            <TypewriterEffectSmoothDemo />
+        <div className=" rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden space-y-10">
+            <TextGenerateEffect words="Hasta Yorumları"/>
             <InfiniteMovingCards
                 items={testimonials}
                 direction="right"
