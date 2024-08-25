@@ -65,7 +65,7 @@ export const Component3 = () => {
                             </motion.p>
                         </div>
                     ))}
-                    <div className="h-40"/>
+                    <div className="hidden md:block h-40"/>
                 </div>
                 <div
                     className={cn(

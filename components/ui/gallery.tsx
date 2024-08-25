@@ -44,7 +44,7 @@ export const Gallery = () => {
     return (
         <div
             ref={ref}
-            className="h-[230vh] sm:h-[200vh] py-40 overflow-hidden  antialiased relative  self-auto [perspective:1000px] [transform-style:preserve-3d]"
+            className="h-[300vh] sm:h-[200vh] py-40 overflow-hidden  antialiased relative  self-auto [perspective:1000px] [transform-style:preserve-3d]"
         >
             <Header />
             <motion.div
@@ -135,6 +135,7 @@ export const ProductCard = ({
                     className="object-cover object-left-top absolute h-full w-full inset-0"
                     alt={product.title}
                 />
+
             </Link>
             <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
             <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">

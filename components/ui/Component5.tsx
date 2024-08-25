@@ -9,7 +9,7 @@ export const Component5 = () => {
 
 
     return (
-      <div className="p-5 md:p-10 max-w-[1500px] mx-auto space-y-10 bg-[#fafafa]/50 rounded-xl">
+      <div className="p-5 md:p-10 max-w-[1500px] mx-auto space-y-5 md:space-y-10 bg-[#fafafa]/50 rounded-xl">
           <Title id="uzmanlik-alanlarim" words="Uzmanlık Alanlarım"/>
           <div
               className={cn(
@@ -60,7 +60,7 @@ export const Card = ({
     return (
         <div
             className={cn(
-                "rounded-2xl flex items-center w-full p-4 h-20 overflow-hidden bg-[#F5F7F8] relative z-20",
+                "rounded-2xl flex items-center w-full p-4 h-16 md:h-20 overflow-hidden bg-[#F5F7F8] relative z-20",
                 className
             )}
         >
@@ -77,7 +77,7 @@ export const CardTitle = ({
     children: React.ReactNode;
 }) => {
     return (
-        <h4 className={cn("text-black font-bold tracking-wide", className)}>
+        <h4 className={cn("text-black text-sm md:text-base font-semibold md:font-bold tracking-wide", className)}>
             {children}
         </h4>
     );

@@ -53,7 +53,7 @@ export function Component6() {
     const [hovered, setHovered] = useState<number | null>(null);
 
     return (
-        <div className="max-w-[1500px] mx-auto space-y-10 px-5 md:px-10">
+        <div className="max-w-[1500px] mx-auto space-y-5 md:space-y-10 px-5 md:px-10">
             <Title id="basarilarim-ve-sertifikalarim" words="Başarılarım ve Sertifikalarım"/>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
                 {data4.map((card, index) => (

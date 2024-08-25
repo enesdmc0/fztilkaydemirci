@@ -15,9 +15,10 @@ export default function Home() {
             <Landing/>
             <Component2/>
             <Component3/>
-            <Contact/>
+
             <Component5/>
             <Component6/>
+            <Contact/>
             <Gallery/>
             <Component9/>
             <footer

@@ -64,7 +64,7 @@ export const Component9 = () => {
     };
     return (
         <div
-            className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden space-y-10">
+            className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden space-y-5 md:space-y-10">
             <Title id="danisan-yorumlari" words="Danışan Yorumları"/>
         <div
             ref={containerRef}
