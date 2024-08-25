@@ -2,7 +2,8 @@
 import Image from "next/image";
 import React, {useState} from "react";
 import {cn} from "@/lib/utils";
-import {TextGenerateEffect} from "@/components/ui/typewriter";
+import {Title} from "@/components/ui/typewriter";
+import {data4} from "@/lib/constants";
 
 export const Card = React.memo(
     ({
@@ -37,7 +38,7 @@ export const Card = React.memo(
                 )}
             >
                 <div
-                    className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+                    className=" sm:text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
                     {card.title}
                 </div>
             </div>
@@ -47,19 +48,15 @@ export const Card = React.memo(
 
 Card.displayName = "Card";
 
-type Card = {
-    title: string;
-    src: string;
-};
 
-export function FocusCards({cards}: { cards: Card[] }) {
+export function Component6() {
     const [hovered, setHovered] = useState<number | null>(null);
 
     return (
-        <div className="max-w-[1500px] mx-auto space-y-10 px-10">
-            <TextGenerateEffect words="Sertifikalar"/>
+        <div className="max-w-[1500px] mx-auto space-y-10 px-5 md:px-10">
+            <Title id="basarilarim-ve-sertifikalarim" words="Başarılarım ve Sertifikalarım"/>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
-                {cards.map((card, index) => (
+                {data4.map((card, index) => (
                     <Card
                         key={card.title}
                         card={card}

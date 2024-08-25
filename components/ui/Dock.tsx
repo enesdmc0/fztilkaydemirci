@@ -1,29 +1,17 @@
-/**
- * Note: Use position fixed according to your needs
- * Desktop navbar is better positioned at the bottom
- * Mobile navbar is better positioned at bottom right.
- **/
-
+"use client"
 import {cn} from "@/lib/utils";
 import {IconLayoutNavbarCollapse} from "@tabler/icons-react";
 import {AnimatePresence, motion, MotionValue, useMotionValue, useSpring, useTransform,} from "framer-motion";
 import Link from "next/link";
 import {useRef, useState} from "react";
+import {data6} from "@/lib/constants";
 
-export const FloatingDock = ({
-                                 items,
-                                 desktopClassName,
-                                 mobileClassName,
-                             }: {
-    items: { title: string; icon: React.ReactNode; href: string }[];
-    desktopClassName?: string;
-    mobileClassName?: string;
-}) => {
+export const Dock = () => {
     return (
-        <>
-            <FloatingDockDesktop items={items} className={desktopClassName}/>
-            <FloatingDockMobile items={items} className={mobileClassName}/>
-        </>
+        <div className="flex items-center justify-center w-full">
+            <FloatingDockDesktop items={data6} className="fixed bottom-5 z-50"/>
+            <FloatingDockMobile items={data6} className="fixed bottom-8"/>
+        </div>
     );
 };
 
@@ -36,7 +24,7 @@ const FloatingDockMobile = ({
 }) => {
     const [open, setOpen] = useState(false);
     return (
-        <div className={cn("relative block md:hidden", className)}>
+        <div className={cn("relative z-50 block md:hidden", className)}>
             <AnimatePresence>
                 {open && (
                     <motion.div
@@ -61,6 +49,7 @@ const FloatingDockMobile = ({
                                 transition={{delay: (items.length - 1 - idx) * 0.05}}
                             >
                                 <Link
+                                     onClick={() => setOpen(false)}
                                     href={item.href}
                                     key={item.title}
                                     className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"

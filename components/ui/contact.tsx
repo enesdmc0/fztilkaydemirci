@@ -2,22 +2,24 @@
 import React, {useState} from "react";
 import Link from "next/link";
 import {cn} from "@/lib/utils";
+import Image from "next/image";
+import Icon, {IconNames} from "@/lib/icon";
 
 
-const Social = () => {
+export const Contact = () => {
     const data: {
         from: string;
         href: string;
         via: string;
         to: string;
         hover: string;
-        icon: any;
+        icon: IconNames;
         text: string;
     }[] = [
         {
             icon: "instagram",
-            href: "https://instagram.com/enes_dmc",
-            text: "enes_dmc",
+            href: "",
+            text: "",
             from: "from-pink-500",
             via: "via-pink-600",
             to: "to-black",
@@ -25,27 +27,26 @@ const Social = () => {
         },
         {
             icon: "x",
-            href: "https://twitter.com/enesdmc0",
-            text: "enesdmc0",
+            href: "",
+            text: "",
             from: "from-red-500",
             via: "via-red-600",
             to: "to-black",
             hover: "group-hover:bg-red-500",
         },
         {
-            icon: "github",
-            href: "https://github.com/enesdmc0",
-            text: "enesdmc0",
+            icon: "youtube",
+            href: "",
+            text: "",
             from: "from-green-400",
             via: "via-green-500",
             to: "to-black",
-
             hover: "group-hover:bg-black",
         },
         {
             icon: "linkedin",
-            href: "https://linkedin.com/in/enesdemirci1",
-            text: "enesdemirci1",
+            href: "",
+            text: "",
             from: "from-purple-500",
             via: "via-purple-600",
             to: "to-black",
@@ -54,14 +55,13 @@ const Social = () => {
         {
             icon: "gmail",
             href: "mailto: enesdmcc@gmail.com",
-            text: "enesdmcc@gmail.com",
+            text: "",
             from: "from-red-500",
             via: "via-red-600",
             to: "to-black",
             hover: "group-hover:bg-pink-500",
         },
     ];
-
     const [activeColor, setActiveColor] = useState({
         from: "from-gray-700",
         via: "via-gray-800",
@@ -69,10 +69,10 @@ const Social = () => {
     });
 
     return (
-        <div className="flex flex-col items-center space-y-5 max-w-[1500px] p-10 mx-auto">
-            <h1
+        <div className="flex flex-col items-center space-y-3 md:space-y-5 max-w-[1200px] p-3 sm:p-10 mx-auto">
+            <h1 id="iletisim"
                 className={cn(
-                    `text-5xl md:text-7xl font-bold leading-none text-center inline-block bg-gradient-to-r bg-clip-text text-transparent py-2 `,
+                    `text-2xl sm:text-5xl md:text-7xl font-bold leading-none text-center inline-block bg-gradient-to-r bg-clip-text text-transparent py-2 `,
                     activeColor.from,
                     activeColor.via,
                     activeColor.to
@@ -108,11 +108,12 @@ const Social = () => {
                                         : ""
                             )}
                         >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="black"
-                                 viewBox="0 0 1200 1227">
-                                <path fill="#000"
-                                      d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"/>
-                            </svg>
+                            <Image className="sm:hidden block" src={Icon[x.icon] as IconNames} alt="" width={24}
+                                   height={24}/>
+                            <Image className="hidden sm:block md:hidden" src={Icon[x.icon] as IconNames} alt="" width={32}
+                                   height={32}/>
+                            <Image className="hidden md:block" src={Icon[x.icon] as IconNames} alt="" width={60}
+                                   height={60}/>
                         </div>
                     </Link>
                 ))}
@@ -120,5 +121,3 @@ const Social = () => {
         </div>
     );
 };
-
-export default Social;

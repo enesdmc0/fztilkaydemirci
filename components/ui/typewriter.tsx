@@ -4,13 +4,7 @@ import {motion, stagger, useAnimate} from "framer-motion";
 import {cn} from "@/lib/utils";
 
 
-export const TextGenerateEffect = ({
-                                       words,
-                                       className,
-                                   }: {
-    words: string;
-    className?: string;
-}) => {
+export const Title = ({words, className, id}: { words: string, className?: string, id: string }) => {
     const [scope, animate] = useAnimate();
     let wordsArray = words.split(" ");
     useEffect(() => {
@@ -46,7 +40,7 @@ export const TextGenerateEffect = ({
     return (
 
 
-        <h2 className={cn(" text-5xl text-black/70 font-bold tracking-wider text-center ", className)}>
+        <h2 id={id} className={cn("text-2xl md:text-5xl text-black/70 font-bold tracking-wider text-center ", className)}>
             {renderWords()}
         </h2>
 

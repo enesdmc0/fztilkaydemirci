@@ -1,20 +1,22 @@
 import {cn} from "@/lib/utils";
 import {AnimatePresence, motion} from "framer-motion";
 import React, {useState} from "react";
-import {TextGenerateEffect} from "@/components/ui/typewriter";
+import { Title} from "@/components/ui/typewriter";
+import {data9} from "@/lib/constants";
 
-export const HoverEffect = () => {
+export const Component5 = () => {
     let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+
     return (
-      <div className="p-10 max-w-[1500px] mx-auto space-y-10 bg-[#fafafa]/50 rounded-xl">
-          <TextGenerateEffect words="Hizmetlerimiz"/>
+      <div className="p-5 md:p-10 max-w-[1500px] mx-auto space-y-10 bg-[#fafafa]/50 rounded-xl">
+          <Title id="uzmanlik-alanlarim" words="Uzmanlık Alanlarım"/>
           <div
               className={cn(
                   "grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 xl:grid-cols-5   ",
               )}
           >
-              {Array(20).fill(0).map((_, idx) => (
+              {data9.map((x, idx) => (
                   <div
                       key={idx}
                       className="relative group block p-2 h-full w-full"
@@ -24,7 +26,7 @@ export const HoverEffect = () => {
                       <AnimatePresence>
                           {hoveredIndex === idx && (
                               <motion.span
-                                  className="absolute inset-0 h-full w-full bg-gray-500  block  rounded-3xl"
+                                  className="absolute inset-0 h-full w-full bg-[#fd346d]  block  rounded-3xl"
                                   layoutId="hoverBackground"
                                   initial={{opacity: 0}}
                                   animate={{
@@ -39,7 +41,7 @@ export const HoverEffect = () => {
                           )}
                       </AnimatePresence>
                       <Card>
-                          <CardTitle>Bel Fıtığı</CardTitle>
+                          <CardTitle>{x}</CardTitle>
                       </Card>
                   </div>
               ))}
@@ -58,13 +60,11 @@ export const Card = ({
     return (
         <div
             className={cn(
-                "rounded-2xl h-full w-full p-2 overflow-hidden bg-[#F5F7F8] relative z-20",
+                "rounded-2xl flex items-center w-full p-4 h-20 overflow-hidden bg-[#F5F7F8] relative z-20",
                 className
             )}
         >
-            <div className="relative z-50">
-                <div className="p-4">{children}</div>
-            </div>
+                {children}
         </div>
     );
 };

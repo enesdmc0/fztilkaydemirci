@@ -3,30 +3,20 @@ import React, {useRef} from "react";
 import {motion, useMotionValueEvent, useScroll} from "framer-motion";
 import {cn} from "@/lib/utils";
 import Image from "next/image";
+import {data3} from "@/lib/constants";
+import {Title} from "@/components/ui/typewriter";
 
-export const StickyScroll = ({
-                                 content,
-                                 contentClassName,
-                             }: {
-    content: {
-        title: string;
-        description: string;
-        content?: React.ReactNode | any;
-        image: string;
-    }[];
-    contentClassName?: string;
-}) => {
+export const Component3 = () => {
     const [activeCard, setActiveCard] = React.useState(0);
     const ref = useRef<any>(null);
     const {scrollYProgress} = useScroll({
-
         container: ref,
         offset: ["start start", "end start"],
     });
-    const cardLength = content.length;
+    const cardLength = data3.length;
 
     useMotionValueEvent(scrollYProgress, "change", (latest) => {
-        const cardsBreakpoints = content.map((_, index) => index / cardLength);
+        const cardsBreakpoints = data3.map((_, index) => index / cardLength);
         const closestBreakpointIndex = cardsBreakpoints.reduce(
             (acc, breakpoint, index) => {
                 const distance = Math.abs(latest - breakpoint);
@@ -42,13 +32,15 @@ export const StickyScroll = ({
 
 
     return (
-        <motion.div
-            className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 p-10 max-w-[1500px] mx-auto"
-            ref={ref}
-        >
-            <div className="relative flex-1">
-                    {content.map((item, index) => (
-                        <div key={item.title + index} className="my-20">
+        <div className="space-y-5">
+            <Title id="sizin-fizypterapistiniz-ilkay-demirci" words="Sizin Fizyoterapistiniz: İlkay Demirci"/>
+            <motion.div
+                className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 p-5 md:p-10 max-w-[1500px] mx-auto"
+                ref={ref}
+            >
+                <div className="relative flex-1">
+                    {data3.map((item, index) => (
+                        <div key={item.title + index} className=" my-5 lg:my-20">
                             <motion.h2
                                 initial={{
                                     opacity: 0,
@@ -74,15 +66,15 @@ export const StickyScroll = ({
                         </div>
                     ))}
                     <div className="h-40"/>
-            </div>
-            <div
-                className={cn(
-                    "hidden lg:block  flex-1 rounded-md sticky top-0 overflow-hidden",
-                    contentClassName
-                )}
-            >
-                <Image src={content[activeCard].image} alt="" fill/>
-            </div>
-        </motion.div>
+                </div>
+                <div
+                    className={cn(
+                        "hidden lg:block  flex-1 rounded-md sticky top-0 overflow-hidden",
+                    )}
+                >
+                    <Image src={data3[activeCard].image} alt="" fill/>
+                </div>
+            </motion.div>
+        </div>
     );
 };

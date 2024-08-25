@@ -3,19 +3,12 @@ import React from "react";
 import {motion, MotionValue, useScroll, useSpring, useTransform,} from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import {data5} from "@/lib/constants";
 
-export const HeroParallax = ({
-                                 products,
-                             }: {
-    products: {
-        title: string;
-        link: string;
-        thumbnail: string;
-    }[];
-}) => {
-    const firstRow = products.slice(0, 5);
-    const secondRow = products.slice(5, 10);
-    const thirdRow = products.slice(10, 15);
+export const Gallery = () => {
+    const firstRow = data5.slice(0, 5);
+    const secondRow = data5.slice(5, 10);
+    const thirdRow = data5.slice(10, 15);
     const ref = React.useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -51,7 +44,7 @@ export const HeroParallax = ({
     return (
         <div
             ref={ref}
-            className="min-[1500px]:h-[200vh] h-[300vh] py-40 overflow-hidden  antialiased relative  self-auto [perspective:1000px] [transform-style:preserve-3d]"
+            className="h-[230vh] sm:h-[200vh] py-40 overflow-hidden  antialiased relative  self-auto [perspective:1000px] [transform-style:preserve-3d]"
         >
             <Header />
             <motion.div
@@ -97,14 +90,13 @@ export const HeroParallax = ({
 
 export const Header = () => {
     return (
-        <div className=" relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0  max-w-[1500px]">
-            <h1 className="text-2xl md:text-7xl font-bold text-black">
-                The Ultimate <br /> development studio
+        <div className=" relative mx-auto py-20 md:py-40 px-4 w-full  left-0 sm:left-10 top-0  ">
+            <h1 id="uygulama-ve-tedavi-galerisi" className="text-2xl md:text-7xl font-bold text-black">
+                Uygulama ve <br/> Tedavi Galerisi
             </h1>
-            <p className="max-w-2xl text-base md:text-xl mt-8 text-black">
-                We build beautiful products with the latest technologies and frameworks.
-                We are a team of passionate developers and designers that love to build
-                amazing products.
+            <p className="w-full sm:w-[700px] text-base md:text-xl mt-8 text-black">
+                Tedavi süreçlerimizin ve uygulamalarımızın çeşitli anlarını bu galeride bulabilirsiniz. Her tedaviye
+                nasıl yaklaştığımızı ve sonuçları görerek, hizmetlerimiz hakkında daha fazla bilgi edinmenizi sağlar.
             </p>
         </div>
     );
