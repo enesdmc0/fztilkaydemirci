@@ -69,7 +69,7 @@ export const Contact = () => {
     });
 
     return (
-        <div className="flex flex-col bg-[#fafafa] items-center space-y-3 md:space-y-5 max-w-[1200px] p-3 sm:p-10 mx-auto">
+        <div className="flex flex-col bg-[#fafafa] rounded-xl items-center space-y-3 md:space-y-5 max-w-[1500px] p-3 sm:p-10 mx-auto">
             <h1 id="iletisim"
                 className={cn(
                     `text-2xl sm:text-5xl md:text-7xl font-bold leading-none text-center inline-block bg-gradient-to-r bg-clip-text text-transparent py-2 `,
