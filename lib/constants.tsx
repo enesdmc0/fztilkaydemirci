@@ -17,7 +17,6 @@ import {
 } from "@tabler/icons-react";
 import React from "react";
 import Image from "next/image";
-import {IconNames} from "@/lib/icon";
 
 export const data1 = [
     "https://images.pexels.com/photos/8313222/pexels-photo-8313222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -76,21 +75,21 @@ export const data2 = [
 
 export const data3 = [
     {
-        title: "Collaborative Editing",
+        title: "Eğitim ve Uzmanlık",
         description:
-            "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.you can streamline your workflow and increase productivity.you can streamline your workflow and increase productivity.you can streamline your workflow and increase productivity.",
+            "Gazi Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü’nden  mezun oldum. Fizyoterapi alanındaki uzmanlık yolculuğum, Akdeniz Üniversitesi’nde Fizyoterapi Teknikerliği bölümünü tamamlamamla başladı. Meslek hayatım boyunca, Reformer Pilates, Kuru İğneleme, Manuel Terapi ve Refleksoloji gibi önemli alanlarda sertifikalar alarak kendimi sürekli geliştirdim.\n",
         content: (
             <div
                 className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
                 Collaborative Editing
             </div>
         ),
-        image: "https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=600"
+        image: "https://images.unsplash.com/photo-1620050382792-434b5828873d?q=80&w=2612&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-        title: "Real time changes",
+        title: "Mesleki Deneyim ve Yaklaşım",
         description:
-            "See changes as they happen. With our platform, you can track every modification in real time. No moreSee changes as they happen. With our platform, you can track every modification in real time. No moreSee changes as they happen. With our platform, you can track every modification in real time. No moreSee changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+            "Hastalarımın fiziksel sağlık hedeflerine ulaşmalarını, yaşam kalitelerini artırmalarını sağlamak için büyük bir özveriyle çalışıyorum. Mesleki deneyimlerim, geniş bir yelpazeye yayılan uzmanlık alanlarımı içermektedir. Bu alanlar; Onkolojik Rehabilitasyon Kardiyopulmoner Rehabilitasyon, Sporcu Sağlığı, Ortopedik Rehabilitasyon, El ve Romatolojik Rehabilitasyon, Pediatrik Rehabilitasyon, Nörolojik Rehabilitasyonu içermektedir. Fizyoterapideki yaklaşımım, hastalarımın ihtiyaçlarına uygun, kişiselleştirilmiş tedavi planları oluşturarak onların yaşam kalitelerini artırmayı hedeflemektedir.",
         content: (
             <div className="h-full w-full  flex items-center justify-center text-white">
                 <Image
@@ -102,31 +101,7 @@ export const data3 = [
                 />
             </div>
         ),
-        image: "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-        title: "Version control",
-        description:
-            "Experience real-time updates and never stress about version control again. Our platform eExperience real-time updates and never stress about version control again. Our platform eExperience real-time updates and never stress about version control again. Our platform eExperience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-        content: (
-            <div
-                className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-                Version control
-            </div>
-        ),
-        image: "https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-        title: "Running out of content",
-        description:
-            "Experience real-time updates and never stressExperience real-time updates and never stress about version control again. Our platform eExperience real-time updates and never stress about version control again. Our platform eExperience real-time updates and never stress about version control again. Our platform eExperience real-time updates and never stress about version control again. Our platform eExperience real-time updates and never stress about version control again. Our platform e about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-        content: (
-            <div
-                className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-                Running out of content
-            </div>
-        ),
-        image: "https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        image: "https://images.unsplash.com/photo-1648638810948-f3bf2cccdde9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
 ];
 
@@ -159,97 +134,83 @@ export const data4 = [
 
 export const data5 = [
     {
-        title: "Moonbeam",
-        link: "https://gomoonbeam.com",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+            "https://images.unsplash.com/photo-1648638810948-f3bf2cccdde9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-        title: "Cursor",
-        link: "https://cursor.so",
+        title: "",
+
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+            "https://images.unsplash.com/photo-1620050382792-434b5828873d?q=80&w=2612&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-        title: "Rogue",
-        link: "https://userogue.com",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+            "https://images.unsplash.com/photo-1620051844584-15ac31d5fccd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
 
     {
-        title: "Editorially",
-        link: "https://editorially.org",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+            "https://images.unsplash.com/photo-1620052079778-7d5b7509645c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-        title: "Editrix AI",
-        link: "https://editrix.ai",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+            "https://images.unsplash.com/photo-1617952986600-802f965dcdbc?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-        title: "Pixel Perfect",
-        link: "https://app.pixelperfect.quest",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+            "https://images.unsplash.com/photo-1597764690523-15bea4c581c9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
 
     {
-        title: "Algochurn",
-        link: "https://algochurn.com",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+            "https://images.unsplash.com/photo-1522845052468-8b871a6176e5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-        title: "Aceternity UI",
-        link: "https://ui.aceternity.com",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+            "https://images.unsplash.com/photo-1581090122319-8fab9528eaaa?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-        title: "Tailwind Master Kit",
-        link: "https://tailwindmasterkit.com",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+            "https://images.pexels.com/photos/5794055/pexels-photo-5794055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
-        title: "SmartBridge",
-        link: "https://smartbridgetech.com",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+            "https://images.pexels.com/photos/5794025/pexels-photo-5794025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
-        title: "Renderwork Studio",
-        link: "https://renderwork.studio",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+            "https://images.pexels.com/photos/20860580/pexels-photo-20860580/free-photo-of-physiotherapist-and-patient.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
 
     {
-        title: "Creme Digital",
-        link: "https://cremedigital.com",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+            "https://images.pexels.com/photos/27730430/pexels-photo-27730430/free-photo-of-a-woman-and-man-doing-a-massage-on-a-man.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
-        title: "Golden Bells Academy",
-        link: "https://goldenbellsacademy.com",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+            "https://images.pexels.com/photos/20860607/pexels-photo-20860607/free-photo-of-physiotherapist-massaging-knee.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
-        title: "Invoker Labs",
-        link: "https://invoker.lol",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+            "https://images.pexels.com/photos/20860621/pexels-photo-20860621/free-photo-of-woman-helping-patient-exercising.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
-        title: "E Free Invoice",
-        link: "https://efreeinvoice.com",
+        title: "",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+            "https://images.pexels.com/photos/20860615/pexels-photo-20860615/free-photo-of-physiotherapist-helping-a-patient-exercise-his-back.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
 ];
 
@@ -317,40 +278,38 @@ export const data6 = [
 export const data7 = [
     {
         quote:
-            "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-        name: "Charles Dickens",
-        title: "A Tale of Two Cities",
+            "Fizyoterapistim sayesinde bel ağrılarım tamamen geçti. Her seans profesyonel ve etkiliydi.",
+        name: "Ayşe Yıldız",
+        title: "Hastane",
     },
     {
         quote:
-            "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-        name: "William Shakespeare",
-        title: "Hamlet",
-    },
-    {
-        quote: "All that we see or seem is but a dream within a dream.",
-        name: "Edgar Allan Poe",
-        title: "A Dream Within a Dream",
+            "Dizimdeki sakatlık için aldığım tedavi, beklediğimden çok daha hızlı bir iyileşme sağladı. İlgisi ve bilgisi gerçekten mükemmeldi.",
+        name: "Mehmet Can",
+        title: "Spor Kliniği",
     },
     {
         quote:
-            "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-        name: "Jane Austen",
-        title: "Pride and Prejudice",
+            "Fizyoterapi seansları sayesinde hareket kabiliyetim geri geldi. Gerçekten alanında uzman bir ekip.",
+        name: "Elif Demir",
+        title: "Fizik Tedavi Merkezi",
     },
     {
         quote:
-            "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-        name: "Herman Melville",
-        title: "Moby-Dick",
+            "Omuz ağrım için aldığım tedavi çok başarılıydı. Seanslardan sonra ağrılarım belirgin şekilde azaldı.",
+        name: "Fatma Kaya",
+        title: "Özel Muayenehane",
+    },
+    {
+        quote:
+            "Fizyoterapistim, tedavi sürecini çok iyi yönetti ve beni her adımda bilgilendirdi. Artık çok daha rahatım.",
+        name: "Ahmet Yılmaz",
+        title: "Rehabilitasyon Merkezi",
     },
 ];
 
-
-
 export const data9 = [
     "Omuz Ağrısı",
-    "Lenfödem (Fil Hastalığı)",
     "Bel - Boyun Fıtığı",
     "Diz Ağrısı",
     "Ön Çapraz Bağ Kopması",
@@ -359,14 +318,11 @@ export const data9 = [
     "Migren",
     "Eklem Problemleri",
     "Menisküs Yırtığı",
-    "Felç",
+    "İnme",
     "Karpal Tünel Sendromu",
-    "Topuk Dikeni",
-    "Lipödem (Ağrılı Selülit)",
     "Fıtık",
-    "Siyatik hastalığı",
+    "Siyatik ağrısı",
     "Bel fıtığı",
-    "Beyin Kanaması",
     "Boyun Fıtığı",
     "Multipl Skleroz - MS",
     "Sinir Sıkışması",
@@ -379,8 +335,8 @@ export const data9 = [
     "Gullian Barre Sendromu",
     "Ayak Bileği Yaralanmaları",
     "Spor Yaralanmaları",
-    "Doğumsal Kol Felci",
-    "Omuz Sıkışması Sendromu",
+    "Brachial Plexus",
+    "İmpingement Sendromu",
     "Bankart Lezyonu",
     "Dirsek Ağrısı (İnstabilitesi)",
     "Bel Ağrıları",
