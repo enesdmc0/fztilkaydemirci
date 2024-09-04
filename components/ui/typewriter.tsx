@@ -26,7 +26,7 @@ export const Title = ({words, className, id}: { words: string, className?: strin
                 {wordsArray.map((word, idx) => {
                     return (
                         <motion.span
-                            key={word + idx}
+                            key={idx}
                             className="opacity-0"
                         >
                             {word}{" "}

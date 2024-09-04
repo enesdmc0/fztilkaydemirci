@@ -1,6 +1,6 @@
-import { IconDescriptor } from "next/dist/lib/metadata/types/metadata-types";
+import {IconDescriptor} from "next/dist/lib/metadata/types/metadata-types";
 
-export const BASE_URL = process.env.BASE_URL ?? "https://fztilkaydemirci.com";
+export const BASE_URL = process.env.BASE_URL ?? "https://fztilkaydemirci.com.tr";
 
 interface TitleMap {
     [key: string]: string;
@@ -15,7 +15,7 @@ const titles: TitleMap = {
 };
 
 const descriptions: DescriptionMap = {
-    home: "Fizyoterapist İlkay Demirci'nin kişisel web sitesi",
+    home: "İlkay Demirci olarak, fizyoterapi alanında uzmanlaşmış bir profesyonel olarak sana özel tedavi planları sunuyorum. Gazi Üniversitesi'nden mezun olduktan sonra, manuel terapi, refleksoloji, kuru iğneleme gibi çeşitli alanlarda sertifikalar aldım. Tecrübe ve modern ekipmanlarla, hastalarımın yaşam kalitesini artırmayı hedefliyorum. Fizyoterapideki yaklaşımım, kişiye özel ve bütünsel bir tedavi sunmak üzerine kurulu. İletişim ve samimiyetle, her adımda yanında oluyorum."
 };
 
 export const AppName = "İlkay Demirci - Fizyoterapist"

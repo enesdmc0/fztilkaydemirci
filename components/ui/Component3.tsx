@@ -40,7 +40,7 @@ export const Component3 = () => {
             >
                 <div className="relative flex-1">
                     {data3.map((item, index) => (
-                        <div key={item.title + index} className=" my-5 lg:my-20">
+                        <div key={index} className=" my-5 lg:my-20">
                             <motion.h2
                                 initial={{
                                     opacity: 0,

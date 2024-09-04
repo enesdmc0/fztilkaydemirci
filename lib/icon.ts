@@ -3,6 +3,7 @@ import x from "@/public/svg/x.svg";
 import linkedin from "@/public/svg/linkedin.svg";
 import gmail from "@/public/svg/gmail.svg";
 import youtube from "@/public/svg/youtube.svg";
+import doctor from "@/public/svg/doctor.svg";
 
 const Icons = {
     instagram,
@@ -10,6 +11,7 @@ const Icons = {
     linkedin,
     gmail,
     youtube,
+    doctor,
 
 } as const;
 

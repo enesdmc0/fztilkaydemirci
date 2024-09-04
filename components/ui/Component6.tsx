@@ -21,7 +21,7 @@ export const Card = React.memo(
             onMouseEnter={() => setHovered(index)}
             onMouseLeave={() => setHovered(null)}
             className={cn(
-                "rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out",
+                "rounded-lg border shadow-xl relative bg-gray-100 overflow-hidden h-72 sm:h-96 w-full transition-all duration-300 ease-out",
                 hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
             )}
         >
@@ -29,7 +29,7 @@ export const Card = React.memo(
                 src={card.src}
                 alt={card.title}
                 fill
-                className="object-cover absolute inset-0"
+                className="object-contain absolute inset-0"
             />
             <div
                 className={cn(
@@ -58,7 +58,7 @@ export function Component6() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
                 {data4.map((card, index) => (
                     <Card
-                        key={card.title}
+                        key={index}
                         card={card}
                         index={index}
                         hovered={hovered}

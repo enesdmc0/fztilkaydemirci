@@ -100,7 +100,7 @@ export const Component9 = () => {
                     {item.name}
                   </span>
                   <span className=" text-sm leading-[1.6] text-black/50 font-normal">
-                    {item.title}
+                    .
                   </span>
                 </span>
                             </div>

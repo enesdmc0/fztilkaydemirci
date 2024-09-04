@@ -107,28 +107,32 @@ export const data3 = [
 
 export const data4 = [
     {
-        title: "Forest Adventure",
-        src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Otizm Çalıştayı",
+        src: "/s1.jpeg",
     },
     {
-        title: "Valley of life",
-        src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Manipulative Physical Therapy",
+        src: "/s2.jpeg",
     },
     {
-        title: "Sala behta hi jayega",
-        src: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Manuel Physical Therapy",
+        src: "/s3.jpeg",
     },
     {
-        title: "Camping is for pros",
-        src: "https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Cupping and Hirudotherapy",
+        src: "/s4.jpeg",
     },
     {
-        title: "The road not taken",
-        src: "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Trigger Points Therapy",
+        src: "/s5.jpeg",
     },
     {
-        title: "The First Rule",
-        src: "https://assets.aceternity.com/the-first-rule.png",
+        title: "Reformer Pilates",
+        src: "/s6.jpeg",
+    },
+    {
+        title: "Refleksoloji",
+        src: "/s7.jpeg",
     },
 ];
 
@@ -280,31 +284,26 @@ export const data7 = [
         quote:
             "Fizyoterapistim sayesinde bel ağrılarım tamamen geçti. Her seans profesyonel ve etkiliydi.",
         name: "Ayşe Yıldız",
-        title: "Hastane",
     },
     {
         quote:
             "Dizimdeki sakatlık için aldığım tedavi, beklediğimden çok daha hızlı bir iyileşme sağladı. İlgisi ve bilgisi gerçekten mükemmeldi.",
         name: "Mehmet Can",
-        title: "Spor Kliniği",
     },
     {
         quote:
-            "Fizyoterapi seansları sayesinde hareket kabiliyetim geri geldi. Gerçekten alanında uzman bir ekip.",
+            "Fizyoterapi seansları sayesinde hareket kabiliyetim geri geldi. Gerçekten alanında uzman bir fizyoterapist.",
         name: "Elif Demir",
-        title: "Fizik Tedavi Merkezi",
     },
     {
         quote:
             "Omuz ağrım için aldığım tedavi çok başarılıydı. Seanslardan sonra ağrılarım belirgin şekilde azaldı.",
         name: "Fatma Kaya",
-        title: "Özel Muayenehane",
     },
     {
         quote:
             "Fizyoterapistim, tedavi sürecini çok iyi yönetti ve beni her adımda bilgilendirdi. Artık çok daha rahatım.",
         name: "Ahmet Yılmaz",
-        title: "Rehabilitasyon Merkezi",
     },
 ];
 

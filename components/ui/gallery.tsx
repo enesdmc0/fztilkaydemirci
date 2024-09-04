@@ -43,7 +43,7 @@ export const Gallery = () => {
     return (
         <div
             ref={ref}
-            className="h-[290vh] sm:h-[200vh] py-40 overflow-hidden  antialiased relative  self-auto [perspective:1000px] [transform-style:preserve-3d]"
+            className="h-[250vh] sm:h-[210vh] py-40 overflow-hidden  antialiased relative  self-auto [perspective:1000px] [transform-style:preserve-3d]"
         >
             <Header />
             <motion.div
@@ -56,29 +56,29 @@ export const Gallery = () => {
                 className=""
             >
                 <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-                    {firstRow.map((product) => (
+                    {firstRow.map((product,i) => (
                         <ProductCard
                             product={product}
                             translate={translateX}
-                            key={product.title}
+                            key={i}
                         />
                     ))}
                 </motion.div>
                 <motion.div className="flex flex-row  mb-20 space-x-20 ">
-                    {secondRow.map((product) => (
+                    {secondRow.map((product, i) => (
                         <ProductCard
                             product={product}
                             translate={translateXReverse}
-                            key={product.title}
+                            key={i}
                         />
                     ))}
                 </motion.div>
                 <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-                    {thirdRow.map((product) => (
+                    {thirdRow.map((product, i) => (
                         <ProductCard
                             product={product}
                             translate={translateX}
-                            key={product.title}
+                            key={i}
                         />
                     ))}
                 </motion.div>
