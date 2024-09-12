@@ -77,7 +77,7 @@ export const data3 = [
     {
         title: "Eğitim ve Uzmanlık",
         description:
-            "Gazi Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü’nden  mezun oldum. Fizyoterapi alanındaki uzmanlık yolculuğum, Akdeniz Üniversitesi’nde Fizyoterapi Teknikerliği bölümünü tamamlamamla başladı. Meslek hayatım boyunca, Reformer Pilates, Kuru İğneleme, Manuel Terapi ve Refleksoloji gibi önemli alanlarda sertifikalar alarak kendimi sürekli geliştirdim.\n",
+            "Gazi Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü’nden  mezun oldum. Fizyoterapi alanındaki uzmanlık yolculuğum, Akdeniz Üniversitesi’nde Fizyoterapi Teknikerliği bölümünü tamamlamamla başladı. Meslek hayatım boyunca, Reformer Pilates, Manuel Terapi ve Refleksoloji gibi önemli alanlarda sertifikalar alarak kendimi sürekli geliştirdim.\n",
         content: (
             <div
                 className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
