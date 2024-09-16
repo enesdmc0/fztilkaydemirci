@@ -1,11 +1,12 @@
 import type {Metadata, Viewport} from "next";
-import {Inter} from "next/font/google";
+
 import "./globals.css";
 import React from "react";
 import {Dock} from "@/components/ui/Dock";
 import {AppDescription, AppName, BASE_URL, Favicon, ThemeColor} from "@/lib/metadatas";
 import { Analytics } from "@vercel/analytics/react"
-const inter = Inter({subsets: ["latin"]});
+import { GeistSans } from 'geist/font/sans';
+
 
 
 export const metadata: Metadata = {
@@ -69,7 +70,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body className={inter.className}>
+        <body className={GeistSans.className}>
         <Analytics/>
         {children}
         <Dock/>
